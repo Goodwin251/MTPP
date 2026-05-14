@@ -1,0 +1,49 @@
+{
+  "race_condition": {
+    "mode": "race_condition_demo",
+    "start_count": 80,
+    "end_count": 642,
+    "delta": 562,
+    "race_detected": true,
+    "elapsed_s": 0.071
+  },
+  "deadlock": {
+    "mode": "deadlock_demo",
+    "thread_a_result": "DEADLOCKED (timeout on lock_01)",
+    "thread_b_result": "DEADLOCKED (timeout on lock_00)",
+    "deadlock_detected": true,
+    "elapsed_s": 0.551
+  },
+  "deadlock_solution": {
+    "mode": "deadlock_solution",
+    "thread_a_result": "completed",
+    "thread_b_result": "completed",
+    "deadlock_detected": false,
+    "elapsed_s": 0.101
+  },
+  "simulation": {
+    "mode": "safe",
+    "grid_size": 50,
+    "n_particles": 200,
+    "n_steps": 500,
+    "master_seed": 42,
+    "start_count": 200,
+    "end_count": 200,
+    "particle_conserved": true,
+    "n_snapshots": 12,
+    "elapsed_s": 3.72
+  },
+  "reproducibility": {
+    "mode": "reproducibility_demo",
+    "master_seed": 42,
+    "grid_size": 20,
+    "n_particles": 50,
+    "n_steps": 200,
+    "run1_elapsed_s": 0.402,
+    "run2_elapsed_s": 0.378,
+    "grids_identical": true,
+    "matching_cells": 400,
+    "total_cells": 400,
+    "match_pct": 100.0
+  }
+}
